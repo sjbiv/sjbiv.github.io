@@ -17,6 +17,15 @@ function openTab(evt, tabId){
     
 }
 
+// window.addEventListener("DOMContentLoaded", () => {
+//   const hash = window.location.hash.substring(1); // remove the #
+//   if (hash) {
+//     openTab(null, hash); // open the tab if hash exists
+//   } else {
+//     openTab(null, "about"); // default tab
+//   }
+// });
+
 // function switchTheme(){
 //     const themeSelector = document.querySelector("#theme-selector")
 
