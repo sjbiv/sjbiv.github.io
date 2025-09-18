@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SJB-IV</title>
+    <link rel="icon" href="./assets/logo_k.png" type="image/png">
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
+</head>
+<body>
+<main>
+    <!-- Sidebar -->
+    <section class="sidebar">
+        <div>
+            <img src="./assets/images/sam_b.jpg" alt="Samuel Burns" />
+        </div>
+        <h1>Samuel J. Burns IV</h1>
+        <p class="primary-text-color">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim velit odit necessitatibus sint eos cumque illo harum.
+        </p>
+
+        <div style="display:flex; gap:1rem;">
+            <a href="#" class="btn-primary">Projects</a>
+            <a href="#" class="btn-primary">Contact</a>
+        </div>
+
+        <div style="margin-top: 1rem; display:flex; gap:1rem; font-size:1.5rem;">
+            <a href="./assets/resume/SamuelB_resume.pdf" class="link base" target="_blank"><i class="bi bi-file-earmark"></i></a>
+            <a href="https://www.linkedin.com/in/Samuel-Burns-IV/" class="link base"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:samueljburnsiv@gmail.com" class="link base"><i class="bi bi-envelope-at-fill"></i></a>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <div style="flex:1; display:flex; flex-direction:column;">
+        <!-- Header / Tabs -->
+        <header>
+            <button class="tab-btn tab-active" onclick="openTab(event,'about')">About</button>
+            <button class="tab-btn" onclick="openTab(event,'experience')">Experience</button>
+            <button class="tab-btn" onclick="openTab(event,'projects')">Projects</button>
+
+        
+            <!-- <button id="mode-toggle" onclick="toggleMode()">
+                <i class="bi bi-sun-fill" id="toggle-mode-icon"></i>
+            </button> -->
+                    
+        </header>
+
+        <!-- Tab contents -->
+        <section id="about" class="tab-content active">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Samuel Burns. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+        </section>
+
+        <section id="experience" class="tab-content">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-container">
+                    <h3>Apple</h3>
+                    <p>2023 - Present</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="timeline-container">
+                    <h3>IBM</h3>
+                    <p>2020 - 2023</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="timeline-container">
+                    <h3>Google</h3>
+                    <p>2018 - 2020</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="tab-content">
+            <h2>Projects</h2>
+            <p>Project content here...</p>
+        </section>
+
+        <footer>
+            &copy; 2025 Samuel Burns IV
+        </footer>
+    </div>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
