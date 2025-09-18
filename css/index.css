@@ -37,81 +37,6 @@ main {
 
 
 /* ============================= */
-/* Sidebar                        */
-/* ============================= */
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0rem;
-    width: 450px;
-    padding: 1rem;
-    box-shadow: 0 4px 12px rgba(100,100,100,0.5);
-    background-color: var(--bg);
-}
-
-
-.sidebar img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 20%;
-}
-
-.sidebar h1 {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.sidebar p {
-    max-width: 550px;
-    text-align: center;
-    color: #d1d5db;
-}
-
-
-.link i {
-    color: var(--color-btn-text); /* gray by default */
-    transition: color 0.3s ease; /* smooth transition */
-}
-
-.link.base:hover i {
-    color: var(--color-primary); 
-}
-
-/* ============================= */
-/* Buttons / Links               */
-/* ============================= */
-.btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-btn-text);
-    padding: 10px 15px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s, background-color 0.3s;
-    text-decoration: none;
-}
-
-.btn-primary:hover {
-    transform: scale(1.03);
-}
-
-.link {
-    color: var(--color-primary);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.link:hover {
-    color: var(--primary-text-color);
-}
-
-/* ============================= */
 /* Tabs                           */
 /* ============================= */
 header {
@@ -308,6 +233,15 @@ footer {
     gap: 1.5rem;
     font-size: 2rem;
 }
+.link i {
+    color: var(--color-btn-text); /* gray by default */
+    transition: color 0.3s ease; /* smooth transition */
+}
+
+.link.base:hover i {
+    color: var(--color-primary); 
+}
+
 
 /* ============================= */
 /* Responsive adjustments          */
