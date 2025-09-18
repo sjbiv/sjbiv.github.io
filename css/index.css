@@ -195,18 +195,19 @@ footer {
     display: flex;
     align-items: center;             /* vertically center image and content */
     gap: 2rem;                       /* space between image and content */
-    max-width: 900px;               /* constrain content width */
+    max-width: 1000px;               /* constrain content width */
     width: 100%;
     flex-wrap: wrap;                  /* wrap on smaller screens */
 }
 
 /* Image */
 .header-container img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: auto;
+    height: 300px;
+    /* border-radius: 50%; */
+    object-fit: contain;
     flex-shrink: 0;
+    /* object-position: 50% 20%; */
 }
 
 /* Stack: name, blurb, social links */
