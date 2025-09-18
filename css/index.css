@@ -28,9 +28,9 @@ html, body {
 
 main {
     display: flex;
-    height: 100%;
+    flex-direction: column; 
+    min-height: 100vh;
     width: 100%;
-    overflow: hidden;
     color: var(--text);
     background-color: var(--bg);
 }
@@ -150,30 +150,23 @@ header {
 /* ============================= */
 /* Tab content                    */
 /* ============================= */
+.tabs-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto; /* make tabs scrollable if needed */
+}
+
 .tab-content {
     display: none;
-    flex: 1 1 auto;
-    flex-direction: column;
-    overflow: auto;
-    padding: 2rem;
-}
-
-.tab-content.active {
-    display: flex;
-    overflow: auto;
-}
-/* .tab-content {
-    flex: 1 1 auto;
-    overflow-y: auto; 
-    min-height: 0;    
-    display: none;
     flex-direction: column;
     padding: 2rem;
 }
 
 .tab-content.active {
     display: flex;
-} */
+}
+
 /* ============================= */
 /* Timeline                        */
 /* ============================= */
@@ -260,6 +253,55 @@ footer {
     padding: 2rem;
     color: var(--text);
     flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Header section: image left, content stacked right, centered */
+.header-section {
+    display: flex;              /* horizontal layout */
+    align-items: center;        /* vertically center content relative to image */
+    justify-content: center;    /* horizontally center the whole section */
+    gap: 2rem;                  /* space between image and content */
+    padding: 2rem 1rem;
+    flex-wrap: wrap;            /* wraps on smaller screens */
+    margin: auto;               /* center in main vertically if needed */
+}
+
+/* Image */
+.header-section img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Content stack: name, blurb, social links */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    /* stack content neatly */
+    max-width: 600px;
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    text-align: left;
+}
+
+.header-content p {
+    color: #d1d5db;
+    margin: 0 0 1rem 0;
+    text-align: left;
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 2rem;
 }
 
 /* ============================= */
