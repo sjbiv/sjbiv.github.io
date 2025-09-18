@@ -142,7 +142,7 @@ header {
     background-color: var(--bg);
 }
 
-.tab-active {
+.tab-btn.tab-active {
     background-color: var(--color-primary);
     color: var(--color-btn-text);
 }
@@ -213,7 +213,7 @@ header {
 
  .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 10px;
       justify-items: center;
     }
@@ -223,9 +223,9 @@ header {
     }
 
     .project img {
-      width: 200px;
-      height: 150px;
-      object-fit: cover;
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
       border: 5px solid #007acc; /* border color */
       border-radius: 10px;
       cursor: pointer;
@@ -233,7 +233,7 @@ header {
     }
 
     .project img:hover {
-      transform: scale(1.05);
+      /* transform: scale(1.05); */
       border-color: #005fa3; /* darker on hover */
     }
 
@@ -258,17 +258,25 @@ footer {
 
 /* Header section: image left, content stacked right, centered */
 .header-section {
-    display: flex;              /* horizontal layout */
-    align-items: center;        /* vertically center content relative to image */
-    justify-content: center;    /* horizontally center the whole section */
-    gap: 2rem;                  /* space between image and content */
+    width: 100%;                     /* full page width */
+    background-color: var(--bg);     /* optional: different bg if desired */
+    display: flex;
+    justify-content: center;         /* centers inner container */
     padding: 2rem 1rem;
-    flex-wrap: wrap;            /* wraps on smaller screens */
-    margin: auto;               /* center in main vertically if needed */
+    box-shadow: 0 4px 0 rgba(100,100,100,0.5);
+}
+/* Inner container: content constrained */
+.header-container {
+    display: flex;
+    align-items: center;             /* vertically center image and content */
+    gap: 2rem;                       /* space between image and content */
+    max-width: 900px;               /* constrain content width */
+    width: 100%;
+    flex-wrap: wrap;                  /* wrap on smaller screens */
 }
 
 /* Image */
-.header-section img {
+.header-container img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -276,28 +284,25 @@ footer {
     flex-shrink: 0;
 }
 
-/* Content stack: name, blurb, social links */
+/* Stack: name, blurb, social links */
 .header-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;    /* stack content neatly */
+    align-items: flex-start;
     max-width: 600px;
 }
 
 .header-content h1 {
     font-size: 2rem;
     margin: 0 0 0.5rem 0;
-    text-align: left;
 }
 
 .header-content p {
     color: #d1d5db;
     margin: 0 0 1rem 0;
-    text-align: left;
 }
 
-/* Social links */
 .social-links {
     display: flex;
     gap: 1.5rem;
