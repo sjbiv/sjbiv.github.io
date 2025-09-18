@@ -43,7 +43,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0rem;
     width: 450px;
     padding: 1rem;
     box-shadow: 0 4px 12px rgba(100,100,100,0.5);
@@ -72,12 +72,8 @@ main {
 
 
 .link i {
-    color: #6c757d; /* gray by default */
+    color: var(--color-btn-text); /* gray by default */
     transition: color 0.3s ease; /* smooth transition */
-}
-
-.link:hover i {
-    color: --primary-text-color; /* bootstrap blue for others */
 }
 
 .link.base:hover i {
