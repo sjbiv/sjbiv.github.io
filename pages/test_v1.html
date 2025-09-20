@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Detail – SJB-IV</title>
+  <link rel="icon" href="../assets/logo_k.png" type="image/png">
+  <link rel="stylesheet" href="../css/index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+  />
+</head>
+<body>
+<main>
+  <!-- Header Section -->
+
+  <section class="header-section">
+    <div class="header-container">
+      <img src="../assets/images/samB.png" alt="Samuel Burns" />
+      <div class="header-content">
+        <button class="back-btn" onclick="history.back()"><h1>← Back</h1></button>
+        <!-- <a href="../index.html" class="back-btn">Back to Home</a> -->
+        <h1>Project Title</h1>
+        <p>A detailed breakdown of one of my robotics projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Content -->
+  <section class="project-detail">
+    <article>
+      <h2>Introduction</h2>
+      <p>
+        This project explores the design and control of a robotic system.
+        The goal was to improve locomotion and efficiency while handling
+        variable environments.
+      </p>
+
+      <img src="../assets/logo_k.png" alt="Project setup" class="project-img">
+
+      <p>
+        Here we discuss the methodology, experimental setup, and challenges
+        encountered during development.
+      </p>
+    </article>
+
+    <article class="side-by-side">
+      <div class="text">
+        <h2>Design & Development</h2>
+        <p>
+          This block demonstrates a paragraph on the left and an image on the right.
+          The image will stay beside the text on wide screens and stack underneath on small screens.
+        </p>
+
+      </div>
+
+      <!-- <div class="media"> -->
+        <!-- Replace src with your actual image -->
+        <img src="../assets/logo_k.png" alt="Prototype render" class="project-img">
+      <!-- </div> -->
+    </article>
+    <article>
+      <h2>Results</h2>
+      <p>
+        Experiments confirmed the design improved performance by 20%. 
+        The following figure shows a comparison of the robot before and after optimization.
+      </p>
+
+      <img src="../assets/logo_k.png" alt="Results graph" class="project-img">
+    </article>
+
+    <article>
+      <h2>Conclusion</h2>
+      <p>
+        This project provided valuable insights into hopping robotics,
+        demonstrating new control strategies and design optimizations that
+        can be applied to future platforms.
+      </p>
+    </article>
+
+    <article>
+      <h2>Demo Video</h2>
+      <p>
+        This short clip demonstrates the robot performing hopping tests under
+        different control strategies.
+      </p>
+
+      <video controls class="project-video" height = "500px">
+        <source src="../assets/video/iphone_trial_2m_1.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+
+      <p>
+        As shown in the video above, the robot was able to maintain balance
+        while hopping across uneven terrain.
+      </p>
+      
+    </article>
+      <article class="side-by-side reverse">
+      <div class="text">
+        <h2>Simulation vs. Experiment</h2>
+        <p>
+          On the right is a video comparing simulation output to the physical
+          robot. Note how closely the dynamics align.
+        </p>
+      </div>
+
+        <video controls class="project-video" height = "500px">
+          <source src="../assets/video/iphone_trial_2m_1.MOV" type="video/quicktime" >
+          Your browser does not support the video tag.
+        </video>
+
+    </article>
+  </section>
+
+  <footer>
+    &copy; 2025 Samuel Burns IV
+  </footer>
+</main>
+</body>
+</html>
+
