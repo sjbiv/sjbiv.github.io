@@ -11,6 +11,7 @@
 
     --bg: #2e2e2e;
     --text: #ffffff;
+    --black: #000000;
 
 }
 
@@ -156,10 +157,10 @@ header {
     }
 
     .project img {
-      width: 100%;
+      width: auto;
       height: 200px;
-      object-fit: contain;
-      border: 5px solid #007acc; /* border color */
+      object-fit: cover;
+      border: 10px solid var(--black); /* border color */
       border-radius: 10px;
       cursor: pointer;
       transition: transform 0.2s, border-color 0.2s;
@@ -167,7 +168,7 @@ header {
 
     .project img:hover {
       /* transform: scale(1.05); */
-      border-color: #005fa3; /* darker on hover */
+      border-color: var(--color-primary); /* darker on hover */
     }
 
     .project p {
