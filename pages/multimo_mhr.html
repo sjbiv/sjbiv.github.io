@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Detail – SJB-IV</title>
+  <link rel="icon" href="../assets/logo_k.png" type="image/png">
+  <link rel="stylesheet" href="../css/index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+  />
+</head>
+<body>
+<main>
+  <!-- Header Section -->
+
+  <section class="header-section">
+    <div class="header-container">
+      <img src="../assets/research_projects/multimo_mhr/R2_front.png" alt="MultiMo-MHR" />
+      <div class="header-content">
+        <button class="back-btn" onclick="history.back()"><h1>← Back</h1></button>
+        <!-- <a href="../index.html" class="back-btn">Back to Home</a> -->
+        <h1>Ph.D. Dissertation:</h1>
+        <h1>Design, Control and Estimation with the MultiMo-MHR: a Multi-Modal Monopedal High Performance Hopping Robot</h1>
+        <p>A overview of one of my Ph.D. Dissertation. Link to be added later, for now contact for full document.</p>
+        <p>Advisor/Committee chair: <a href="https://scholar.google.de/citations?hl=en&user=ZdoFwVYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="custom-link">Dr. Matthew Woodward</a></p>
+        <p>Committee members:<a href="https://engineering.tufts.edu/me/people/faculty/felix-huang" target="_blank" class="custom-link">Dr. Felix Huang</a>, 
+          <a href="https://engineering.tufts.edu/cs/people/faculty/jivko-sinapov" target="_blank" class="custom-link">Dr. Jivko Sinapov</a> &  
+          <a href="https://engineering.purdue.edu/ME/People/ptProfile?resource_id=273141" target="_blank" class="custom-link">Dr. Yan Gu</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Content -->
+  <section class="project-detail">
+    <article>
+      <h2>Abstract</h2>
+      <p>
+        With the advancement of robot platforms for complex tasks, a deeper understanding of how the system can traverse an environment is required. Two common strategies concentrate on terrestrial motion or aerial flight. This thesis explores an alternative locomotion strategy, hopping, requiring both a sturdy design to survive continuous ground impacts and to be highly agile for aerial maneuvering. This thesis explores high-performance, high-energy, and highly dynamic hopping up to 4 m, a task no other hopping robot has achieved; to date, excluding this work, the highest hopping robot attains a 1.63 m hop. Where low energy hopping generates easier control stabilization and limits the full range of potential for hopping. 
+      </p>
+      This dissertation culminates the exploration into this higher energy and dynamic region of hopping locomotion. A hopping robot, the MultiMo-MHR, was developed, capable of hopping up to 4 m while weighing 684 g and standing 369 mm tall. Designed with a singular monopedal hopping leg and a quadrotor-based motor configuration for control and energy input. The thesis is comprised of four main parts, starting with a detailed robot overview that explores both the background of hopping robots, the design, control, and experimental elements. The first study explores design principles and control design to optimize efficiency. Presenting both the high-performance robot as well as design and control principles for efficient hopping. To expand the capabilities of hopping systems, the subsequent study explored full vertical state estimation for hopping robots. A region of study that needs to be studied as hopping systems reach new speeds and heights, and ballistic assumptions (i.e., no thrust, no drag) fail. Presenting an optimized Kalman filter estimation technique, requiring only accelerometer input while minimizing computational and weight load. Ultimately, enabling direct hopping height control and achieving a mean absolute percent error on the hop height of 12.5\%. A final study begins entering higher dynamic horizontal motion with an improved controller design. Prior studies used PiD control and centered on vertical hopping, now expanding to a model-based Lyapunov control. The work shows that the robot can handle disturbances and complex trajectories without sacrificing vertical height, thanks to the guaranteed stability and model-based control offered with the new controller. All works improve the hopping robots' capabilities and push the bounds of what hopping robots can do and explore. 
+      </p>
+      <!-- <img src="../assets/logo_k.png" alt="Project setup" class="project-img"> -->
+    </article>
+
+    <article class="side-by-side">
+      <div class="text">
+        <h2>Design & Development</h2>
+        <p>
+          This block demonstrates a paragraph on the left and an image on the right.
+          The image will stay beside the text on wide screens and stack underneath on small screens.
+        </p>
+
+      </div>
+
+      <!-- <div class="media"> -->
+        <!-- Replace src with your actual image -->
+        <img src="../assets/logo_k.png" alt="Prototype render" class="project-img">
+      <!-- </div> -->
+    </article>
+    <article>
+      <h2>Results</h2>
+      <p>
+        Experiments confirmed the design improved performance by 20%. 
+        The following figure shows a comparison of the robot before and after optimization.
+      </p>
+
+      <img src="../assets/logo_k.png" alt="Results graph" class="project-img">
+    </article>
+
+    <article>
+      <h2>Conclusion</h2>
+      <p>
+        This project provided valuable insights into hopping robotics,
+        demonstrating new control strategies and design optimizations that
+        can be applied to future platforms.
+      </p>
+    </article>
+
+    <article>
+      <h2>Demo Video</h2>
+      <p>
+        This short clip demonstrates the robot performing hopping tests under
+        different control strategies.
+      </p>
+
+      <!-- <video controls class="project-video"> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DhGGhCtmLbM" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="project-video"></iframe>
+      <!-- </video> -->
+
+      <p>
+        As shown in the video above, the robot was able to maintain balance
+        while hopping across uneven terrain.
+      </p>
+      
+    </article>
+    <!-- <article class="side-by-side reverse">
+      <div class="text">
+        <h2>Simulation vs. Experiment</h2>
+        <p>
+          On the right is a video comparing simulation output to the physical
+          robot. Note how closely the dynamics align.
+        </p>
+      </div>
+    
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DhGGhCtmLbM" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </article>
+    <article class="side-by-side">
+      <div class="text">
+        <h2>Design & Development</h2>
+        <p>
+          This block demonstrates a paragraph on the left and an image on the right.
+          The image will stay beside the text on wide screens and stack underneath on small screens.
+        </p>
+    
+      </div>
+    
+
+      <img src="../assets/logo_k.png" alt="Prototype render" class="project-img">
+    </article> -->
+    
+  </section>
+
+  <footer>
+    &copy; 2025 Samuel Burns IV
+  </footer>
+</main>
+</body>
+</html>
+

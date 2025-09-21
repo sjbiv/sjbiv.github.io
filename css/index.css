@@ -36,7 +36,14 @@ main {
     background-color: var(--bg);
 }
 
+.custom-link {
+  color: var(--color-btn-text);       
+}
 
+.custom-link:hover {
+  color: var(--color-primary);   
+  /* text-decoration: underline;  */
+}
 /* ============================= */
 /* Tabs                           */
 /* ============================= */
@@ -250,8 +257,8 @@ footer {
     width: 8%;
     height: 5%;
     position: absolute;
-    right: 30rem;
-    top: 5%;
+    right: 25rem;
+    top: 1%;
     border-radius: 6px;
 }
 
