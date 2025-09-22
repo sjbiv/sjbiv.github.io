@@ -213,8 +213,8 @@ footer {
 
 /* Image */
 .header-container img {
-    width: auto;
-    height: 300px;
+    /* width: auto;
+    height: 300px; */
     /* border-radius: 50%; */
     object-fit: contain;
     flex-shrink: 0;
@@ -334,7 +334,15 @@ footer {
 .side-by-side.reverse {
   flex-direction: row-reverse;
 }
+.pdf-container {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering (if container has a set height) */
+}
 
+embed {
+  display: block; /* makes centering work more reliably */
+}
 /* Mobile stacking */
 @media (max-width: 800px) {
   .side-by-side {
